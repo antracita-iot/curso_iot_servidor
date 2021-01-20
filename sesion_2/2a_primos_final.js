@@ -49,6 +49,7 @@ function comprobarSiEsPrimo(numero) {
     let esPrimo = true;
     let procesoVueltas = 0;
     //console.timeLog('caso1')
+
     for(let divisor = 2; divisor < numero-1; divisor++){
         
         procesoVueltas++;
@@ -61,13 +62,12 @@ function comprobarSiEsPrimo(numero) {
 
         if( resto == 0 ){
             esPrimo = false;
-            console.log(`\n\nEl número ${numero} NO es primo`);
             break;
         }
     }
-
+    (esPrimo)? console.log(`El número ${numero} es primo`):console.log(`El número ${numero} no es primo`)
     console.log('\n\nVueltas: ', procesoVueltas)
     console.timeEnd('caso1')
 }
 
-comprobarSiEsPrimo(15)
+comprobarSiEsPrimo(7)

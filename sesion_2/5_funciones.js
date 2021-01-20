@@ -3,41 +3,43 @@
 
 // ------------------------------------
 // Declarar la función
-// function saludar() {
-//     // Contenido de la función
-//     console.log("Hola Mundo");
-//   }
+function saludar() {
+    // Contenido de la función
+    console.log("Hola Mundo");
+  }
   
-//   // Ejecutar la función
-//   saludar();
+  // Ejecutar la función
+  saludar();
 
+  
 
 // ------------------------------------
 // Si no le indicamos que devuelva algo, devolverá undefined por defecto.
 
-// function suma(a,b){
-//     console.log(a + b);
-// }
-// const miSuma = suma(2,3)  // undefined
-// console.log(miSuma)  
+function suma(a,b){
+    console.log(a + b);
+}
+
+const miSuma = suma(2,3)  // undefined
+console.log(miSuma)  
 
 
 // // en cambio ahora
   
-// function suma2(a,b){
-//     return a + b;
-// }
-// const miSuma2 = suma2(2,3)
-// console.log(miSuma2)  
+function suma2(a,b){
+    return a + b;
+}
+const miSuma2 = suma2(2,3)
+console.log(miSuma2)  
 
 // ------------------------------------
 // Expresión de una función
 
-// const saludo = function saludar() {
-//   return "Hola";
-// };
+const saludo = function saludar() {
+  return "Hola";
+};
 
-// saludo(); // 'Hola'
+console.log(saludo()); // 'Hola'
 
 
 // ------------------------------------
